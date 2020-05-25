@@ -6,6 +6,7 @@ import dagger.Subcomponent
 @Subcomponent(
     modules = [
         // Bounded feature one activity necessary modules comes here
+        FeatureOneModule::class
     ]
 )
 interface FeatureOneComponent {

@@ -16,6 +16,9 @@ class FeatureOneActivity : AppCompatActivity() {
     @Inject
     lateinit var networkService: NetworkService
 
+    @Inject
+    lateinit var featureOneObject: FeatureOneObject
+
     /**
      * Create component and inject
      */
@@ -31,5 +34,6 @@ class FeatureOneActivity : AppCompatActivity() {
         setContentView(R.layout.activity_feature_one)
         Log.d("FeatureOneActivity", databaseService.toString())
         Log.d("FeatureOneActivity", networkService.toString())
+        Log.d("FeatureOneActivity", featureOneObject.toString())
     }
 }
