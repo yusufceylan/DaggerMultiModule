@@ -1,8 +1,10 @@
 package com.ysfcyln.feature_two.di
 
+import com.ysfcyln.base.ActivityScope
 import com.ysfcyln.feature_two.FeatureTwoActivity
 import dagger.Subcomponent
 
+@ActivityScope
 @Subcomponent(
     modules = [
         // Bounded feature two activity necessary modules comes here

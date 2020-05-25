@@ -1,8 +1,10 @@
 package com.ysfcyln.feature_three.di
 
+import com.ysfcyln.base.ActivityScope
 import com.ysfcyln.feature_three.FeatureThreeActivity
 import dagger.Subcomponent
 
+@ActivityScope
 @Subcomponent(
     modules = [
         // Bounded feature three activity necessary modules comes here
