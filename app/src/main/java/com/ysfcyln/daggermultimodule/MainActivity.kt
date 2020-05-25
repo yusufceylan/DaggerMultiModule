@@ -9,6 +9,7 @@ import com.ysfcyln.base.NetworkService
 import com.ysfcyln.daggermultimodule.R
 import com.ysfcyln.daggermultimodule.di.main.MainComponentProvider
 import com.ysfcyln.feature_one.FeatureOneActivity
+import com.ysfcyln.feature_two.FeatureTwoActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
@@ -45,6 +46,10 @@ class MainActivity : AppCompatActivity() {
     private fun clickListeners() {
         btnFeatureOne.setOnClickListener {
             startActivity(Intent(this, FeatureOneActivity::class.java))
+        }
+
+        btnFeatureTwo.setOnClickListener {
+            startActivity(Intent(this, FeatureTwoActivity::class.java))
         }
     }
 }
