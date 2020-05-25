@@ -1,2 +1,3 @@
 rootProject.name='DaggerMultiModule'
 include ':app'
+include ':base'
