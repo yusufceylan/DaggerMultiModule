@@ -1,5 +1,6 @@
 package com.ysfcyln.daggermultimodule
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,8 @@ import com.ysfcyln.base.DatabaseService
 import com.ysfcyln.base.NetworkService
 import com.ysfcyln.daggermultimodule.R
 import com.ysfcyln.daggermultimodule.di.main.MainComponentProvider
+import com.ysfcyln.feature_one.FeatureOneActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -32,5 +35,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.d("MainActivity", databaseService.toString())
         Log.d("MainActivity", networkService.toString())
+
+        clickListeners()
+    }
+
+    /**
+     * View click listeners
+     */
+    private fun clickListeners() {
+        btnFeatureOne.setOnClickListener {
+            startActivity(Intent(this, FeatureOneActivity::class.java))
+        }
     }
 }

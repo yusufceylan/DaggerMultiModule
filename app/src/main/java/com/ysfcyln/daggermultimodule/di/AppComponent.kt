@@ -3,6 +3,7 @@ package com.ysfcyln.daggermultimodule.di
 import android.app.Application
 import com.ysfcyln.base.BaseModule
 import com.ysfcyln.daggermultimodule.di.main.MainComponent
+import com.ysfcyln.feature_one.di.FeatureOneComponent
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
@@ -26,5 +27,8 @@ interface AppComponent {
 
     // Save the reference of factories in the app component for creating sub components
     fun mainComponent() : MainComponent.Factory
+
+    // Save the reference of factories in the app component for creating sub components
+    fun featureOneComponent() : FeatureOneComponent.Factory
 
 }

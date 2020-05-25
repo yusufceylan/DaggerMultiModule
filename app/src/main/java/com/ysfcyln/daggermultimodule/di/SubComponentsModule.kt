@@ -1,6 +1,7 @@
 package com.ysfcyln.daggermultimodule.di
 
 import com.ysfcyln.daggermultimodule.di.main.MainComponent
+import com.ysfcyln.feature_one.di.FeatureOneComponent
 import dagger.Module
 
 /**
@@ -8,7 +9,8 @@ import dagger.Module
  */
 @Module(
     subcomponents = [
-        MainComponent::class
+        MainComponent::class,
+        FeatureOneComponent::class
     ]
 )
 class SubComponentsModule {
