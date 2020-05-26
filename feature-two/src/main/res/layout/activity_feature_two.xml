@@ -4,30 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FeatureTwoActivity">
 
     <Button
-        android:id="@+id/btnFeatureOne"
+        android:id="@+id/btnFeatureThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open Feature One!"
+        android:text="Open Feature Three!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="14sp"
         android:textColor="@android:color/black"/>
-
-    <Button
-        android:id="@+id/btnFeatureTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Open Feature Two!"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFeatureOne"
-        android:textSize="14sp"
-        android:textColor="@android:color/black"
-        android:layout_marginTop="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
